@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="display10" method="POST">
+    {% csrf_token %}
+    BOOK_ID:
+    <input type="text" name="d1">
+    <input type="submit" value="SEARCH">
+    {% for i in y %}
+    {{i.BOOK_ID}}
+    {{i.BOOK_NAME}}
+    {{i.BOOK_AUTHUR}}
+    {{i.BOOK_PRICE}}
+    {% endfor %}
+    <a href="display11">DASHBOARD</a>
+</form>
+</body>
+</html>

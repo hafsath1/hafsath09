@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="display6" method="get">
+    <table border="2">
+        <tr>
+            <th>BOOK_ID</th>
+            <th>BOOK_NAME</th>
+            <th>BOOK_AUTHUR</th>
+            <th>BOOK_PRICE</th>
+        </tr>
+        {% for i in y %}
+        <tr>
+            <td>{{i.bookid}}</td>
+            <td>{{i.bookname}}</td>
+            <td>{{i.bookauthur}}</td>
+            <td>{{i.bookprice}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br><br><a href="display8">DASHBOARD</a>
+</form>
+
+</body>
+</html>
